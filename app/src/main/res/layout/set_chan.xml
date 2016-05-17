@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background5">
+    
+    <TableLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:id="@+id/tableLayout">
+    
+        <TableRow android:gravity="center">
+   	        <TextView
+    	        android:text="Channel Name:  "
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+            />
+         
+            <TextView
+                android:id="@+id/hostChannelName"
+    	        android:text="1234567890"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+            />
+        </TableRow>
+        
+        <TableRow android:gravity="center">
+            <TextView
+    	         android:text="Channel Status:  "
+                 android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+            />
+         
+            <TextView
+                android:id="@+id/hostChannelStatus"
+    	        android:text="1234567890"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+            />
+        </TableRow>
+    </TableLayout>
+    
+    <View
+        android:layout_width="match_parent"
+    	android:layout_height="5dip">
+    </View>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="9"
+        android:hint="Enter channel name"
+        android:id="@+id/username"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@android:color/holo_purple"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Channel"
+        android:id="@+id/startChannel"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/okButton"
+        android:layout_toStartOf="@+id/okButton"
+        android:textColor ="@android:color/holo_purple"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Channel"
+        android:id="@+id/stopChannel"
+        android:layout_alignTop="@+id/startChannel"
+        android:layout_toRightOf="@+id/okButton"
+        android:layout_toEndOf="@+id/okButton"
+        android:textColor ="@android:color/holo_purple"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/okButton"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:textColor ="@android:color/holo_purple"/>
+</RelativeLayout>

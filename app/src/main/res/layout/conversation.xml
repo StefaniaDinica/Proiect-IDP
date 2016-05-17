@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background5">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:id="@+id/tableLayout2">
+
+        <TableRow>
+
+   	        <TextView
+    	        android:text="Channel Name:  "
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+
+            />
+
+            <TextView
+                android:id="@+id/useChannelName"
+    	        android:text="1234567890"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+            />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/useLeave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Channel"
+        android:layout_gravity="right"
+        android:layout_column="22"
+        android:layout_below="@+id/tableLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/holo_purple"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/useMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter message here"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/useLeave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:textColorHint="@android:color/holo_purple"/>
+       
+    <ListView
+        android:id="@+id/useHistoryList"           
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ff505050"
+        android:dividerHeight="1dp"
+        android:transcriptMode="alwaysScroll"
+        android:layout_below="@+id/useMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

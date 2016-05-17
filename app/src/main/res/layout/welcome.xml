@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background5">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to MyChat Application"
+        android:id="@+id/textView"
+        android:layout_marginTop="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Enter your username"
+        android:id="@+id/username"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@android:color/holo_purple"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Chat"
+        android:id="@+id/submit_button"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_purple"/>
+
+</RelativeLayout>
